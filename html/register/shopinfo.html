@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>填写店铺信息</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <script type="text/javascript" src="../../static/js/plug/flexible.debug.js"></script>
+    <link rel="stylesheet" href="../../static/css/reg.css">
+</head>
+
+<body>
+    <div id="wap" class="js_regin_index">
+        <p class="reg_title grey">店铺基本信息</p>
+        <section class="section_reg">
+            <dl class="hang">
+                <dt>店铺名称<span class="right_arrow"><i class="i_normal">!</i></span></dt>
+                <dd>
+                    <input class="text js_storage js_shopname" type="text" value="" placeholder="请输入" name="shopname" />
+                </dd>
+            </dl>
+            <dl class="hang error js_go_classify">
+                <dt>经营类型<span class="right_arrow"><i class="i_normal">!</i></span></dt>
+                <dd>
+                    <span class="arrow"></span>
+                    <input class="text dd_select js_storage js_shoptype_id" type="text" value="" placeholder="请选择" readonly="readonly" name="shoptype_id" />
+                </dd>
+            </dl>
+            <dl class="hang js_go_address">
+                <dt>店铺地址<span class="right_arrow"><i class="i_normal">!</i></span></dt>
+                <dd>
+                    <span class="arrow"></span>
+                    <textarea  class="text dd_select js_storage js_address_p" type="text" placeholder="请选择" rows="" readonly="readonly" name="address_p" data-province="" data-city="" data-location="">A座底商1002号(如定位地址不够精确，请将店铺的地址一并写在详细地址栏中)</textarea>
+                </dd>
+            </dl>
+            <dl class="hang">
+                <dt>详细门牌号<span class="right_arrow"><i class="i_normal">!</i></span></dt>
+                <dd>
+                    <input class="text js_storage js_address" type="text" value="" placeholder="请输入" name="address" />
+                </dd>
+            </dl>
+        </section>
+        <p class="remark grey">
+            <span class="orange">*</span>例：A座底商1002号(如定位地址不够精确，请将店铺的地址一并写在详细地址栏中)
+        </p>
+        <section class="section_reg">
+            <dl class="hang dt_long js_go_shopinpic">
+                <dt>店铺实拍图片<span class="right_arrow"><i class="i_normal">!</i></span></dt>
+                <dd>
+                    <span class="arrow"></span>
+                    <input class="text dd_select js_storage js_shoppic" type="text" value="" placeholder="请上传" readonly="readonly" name="shoppic" />
+                </dd>
+            </dl>
+            <dl class="hang dt_long js_go_companypic" data-small="small">
+                <dt>营业执照实拍图片<span class="right_arrow"><i class="i_normal">!</i></span></dt>
+                <dd>
+                    <span class="arrow"></span>
+                    <input class="text dd_select js_storage js_lisencepic" type="text" value="" placeholder="请上传" readonly="readonly" name="lisencepic" />
+                </dd>
+            </dl>
+            <dl class="hang dt_long">
+                <dt>店内联系电话(选填)<span class="right_arrow"><i class="i_normal">!</i></span></dt>
+                <dd>
+                    <input class="text js_storage js_shoptel" type="text" value="" placeholder="请输入顾客可联系的电话" name="landline" />
+                </dd>
+            </dl>
+        </section>
+        <section class="section_footer">
+            <span class="content_sub js_second">下一步</span>
+        </section>
+    </div>
+    <script src="../../static/js/require.2.1.11.min.js" type="text/javascript" data-main="../../static/js/register/shopinfo.js" defer async="true"></script>
+</body>
+
+</html>

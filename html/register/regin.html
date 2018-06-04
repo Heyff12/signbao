@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>商户入驻</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <script type="text/javascript" src="../../static/js/plug/flexible.debug.js"></script>
+    <link rel="stylesheet" href="../../static/css/reg.css">
+</head>
+
+<body>
+    <div id="wap" class="js_regin_index">
+        <section class="section_reg">
+            <dl class="hang">
+                <dt>手机号<span class="right_arrow"><i class="i_normal">!</i></span></dt>
+                <dd>
+                    <input class="text js_storage js_phone" type="text" value="" placeholder="请输入申请人手机号" name="username" />
+                </dd>
+            </dl>
+            <dl class="hang">
+                <dt>验证码<span class="right_arrow"><i class="i_normal">!</i></span></dt>
+                <dd>
+                    <input type="text" name="" value="" class="text text_shot js_code" placeholder="请输入6位短信验证码" />
+                    <p class="entycode" id="get_identyCode">
+                        <span class="get_entycode js_get_entycode">获取验证码</span>
+                        <span class="show_entycode js_show_entycode">剩余<i class="i_normal">61</i>秒</span>
+                    </p>
+                </dd>
+            </dl>
+        </section>
+        <section class="section_reg">
+            <dl class="hang dt_long">
+                <dt>推荐人手机号(选填)<span class="right_arrow"><i class="i_normal">!</i></span></dt>
+                <dd>
+                    <input class="text js_storage js_refer_tel" type="text" value="" placeholder="请输入手机号" name="referphone" />
+                </dd>
+            </dl>
+        </section>
+        <p class="remark grey">
+            <span class="orange">*</span>注册即表示同意<a href="#" class="grey">钱方好近商户服务协议、服务隐私政策条款</a>
+        </p>
+        <section class="section_footer">
+            <span class="content_sub js_first">下一步</span>
+        </section>
+    </div>
+    <script src="../../static/js/require.2.1.11.min.js" type="text/javascript" data-main="../../static/js/register/regin.js" defer async="true"></script>
+</body>
+
+</html>

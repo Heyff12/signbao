@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>身份证正反面照片</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <script type="text/javascript" src="../../static/js/plug/flexible.debug.js"></script>
+    <link rel="stylesheet" href="../../static/css/reg.css">
+</head>
+
+<body>
+    <div id="wap" class="js_regin_index">
+        <p class="remark grey">
+            <span class="orange">*</span>必须使用有效期内的二代身份证，身份证号码及头像清晰可见，商家负责人年龄在18-70周岁范围内
+        </p>
+        <section class="section_pic">
+            <dl class="js_cardface_pic" id="js_pic0">
+                <form name="regis_pic0" id="regis_pic0" enctype="multipart/form-data">
+                    <dt>身份证正面照片</dt>
+                    <dd class="opload_img" id="preview0"><img class="js_storage_img" data-mame="cardface" src="../../static/img/wu@3x.png"></dd>
+                    <dd class="ipload">
+                        <input type="file" name="cardface" size="32" accept="image/*" class="file file_style" id="js_cardface" value="" />重新上传
+                    </dd>
+                    <input type="hidden" name="tag" value="cardface" />
+                    <input type="hidden" name="category" value="1" />
+                    <input type="hidden" name="source" value="1" />
+                </form>
+            </dl>
+            <dl class="js_cardback_pic" id="js_pic1">
+                <form name="regis_pic1" id="regis_pic1" enctype="multipart/form-data">
+                    <dt>身份证反面照片</dt>
+                    <dd class="opload_img" id="preview1"><img class="js_storage_img" data-mame="cardback" src="../../static/img/wu@3x.png"></dd>
+                    <dd class="ipload">
+                        <input type="file" name="cardback" size="32" accept="image/*" class="file file_style" value="" id="js_cardback" />重新上传
+                    </dd>
+                    <input type="hidden" name="tag" value="cardback" />
+                    <input type="hidden" name="category" value="1" />
+                    <input type="hidden" name="source" value="1" />
+                </form>
+            </dl>
+            <dl class="js_cardhand_pic" id="js_pic2">
+                <form name="regis_pic2" id="regis_pic2" enctype="multipart/form-data">
+                    <dt>手持身份证照片</dt>
+                    <dd class="opload_img" id="preview2"><img class="js_storage_img" data-mame="cardhand" src="../../static/img/wu@3x.png"></dd>
+                    <dd class="ipload">
+                        <input type="file" name="cardhand" size="32" accept="image/*" class="file file_style" value="" id="js_cardhand" />重新上传
+                    </dd>
+                    <input type="hidden" name="tag" value="cardhand" />
+                    <input type="hidden" name="category" value="1" />
+                    <input type="hidden" name="source" value="1" />
+                </form>
+            </dl>
+            <!-- <dl>
+                <dt>身份证正面照片</dt>
+                <dd class="opload_img"><img src="../../static/img/wu@3x.png"></dd>
+                <dd class="ipload">重新上传</dd>
+            </dl>
+            <dl>
+                <dt>身份证反面照片</dt>
+                <dd class="opload_img"><img src="../../static/img/wu@3x.png"></dd>
+                <dd class="ipload">重新上传</dd>
+            </dl>
+            <dl>
+                <dt>手持身份证照片</dt>
+                <dd class="opload_img"><img src="../../static/img/wu@3x.png"></dd>
+                <dd class="ipload">重新上传</dd>
+            </dl> -->
+        </section>
+        <section class="section_footer">
+            <span class="content_sub js_busypic">完成</span>
+        </section>
+    </div>
+    <script src="../../static/js/require.2.1.11.min.js" type="text/javascript" data-main="../../static/js/register/busipic.js" defer async="true"></script>
+</body>
+
+</html>

@@ -1,0 +1,7 @@
+/**
+ * rechargeB - rechargeB详情
+ * @version v1.0.0
+ * @link 
+ * @license ISC
+ */
+function timedCount(){var e=$(".js_show_entycode i").text();$(".js_show_entycode i").text(e-1),t=setTimeout("timedCount()",1e3),0==e&&(clearTimeout(t),$(".js_get_entycode").show(),$(".js_show_entycode i").text(61),$(".js_show_entycode").hide())}require(["../require-config"],function(){require(["zepto","yanzheng","add_bounced","ajax_rule","localstorage"],function($,e,t,o,s){$(function(){function o(e){$(".js_get_entycode").hide(),$(".js_show_entycode").show(),timedCount()}$(document).ready(function(){s.get_storage()});var n,r=e.get_hash("business");n="small"==r?"business=small":"",$(".js_first").on("click",function(){e.tel_test(".js_phone"),e.code_test(".js_code");var t=$(".js_refer_tel").val();t.length>0?e.tel_test(".js_refer_tel"):$(".js_refer_tel").parents("dl").removeClass("error_data");var o=$(".error_data").length;return!(o>0)&&(s.set_storage(),void(location.href="file:///Users/yaya/Documents/job/local/%E7%AD%BE%E7%BA%A6%E5%AE%9D/signbao/html/register/shopinfo.html?"+n))}),$("#get_identyCode").on("click",function(){if(e.tel_test(".js_phone"),$(".js_phone").parents("dl").hasClass("error_data"))return!1;$(".js_phone").val();o()}),$(".js_show_entycode").on("click",function(){$(".alert_con").show(),$(".alert_con .alert_con_br").html("一分钟后再次获取！"),$(".zheceng").show()}),t.add_bounced(),t.close_tip()})})});

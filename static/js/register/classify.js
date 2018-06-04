@@ -1,0 +1,7 @@
+/**
+ * rechargeB - rechargeB详情
+ * @version v1.0.0
+ * @link 
+ * @license ISC
+ */
+require(["../require-config"],function(){require(["zepto","yanzheng","add_bounced","ajax_rule","localstorage"],function($,i,l,e,s){$(function(){var e;$(document).ready(function(){var l=i.get_hash("business");"small"==l?($(".js_lisencepic").parents("dl").hide(),e="business=small"):($(".js_lisencepic").parents("dl").show(),e="")}),$(".js_one li").live("click",function(){var i=$(this).text();$(".js_gradetwo").removeClass("span_hide").addClass("span_show").find("i.i_normal").text(i);var l="<li>食品零售</li><li>食品零售</li><li>食品零售</li><li>食品零售</li><li>食品零售</li><li>食品零售</li><li>食品零售</li><li>食品零售</li>";$(".js_two").html(l),$(".js_one").addClass("ul_hide"),$(".js_two").removeClass("ul_hide")}),$(".js_two li").live("click",function(){var i=$(this).text();$(".js_gradethree").removeClass("span_hide").addClass("span_show").find("i.i_normal").text(i);var l="<li>休闲娱乐</li><li>休闲娱乐</li><li>休闲娱乐</li><li>休闲娱乐</li><li>休闲娱乐</li><li>休闲娱乐</li><li>休闲娱乐</li><li>休闲娱乐</li>";$(".js_three").html(l),$(".js_two").addClass("ul_hide"),$(".js_three").removeClass("ul_hide")}),$(".js_three li").live("click",function(){var i=$(this).text();localStorage.setItem("shoptype_id",i),location.href="file:///Users/yaya/Documents/job/local/%E7%AD%BE%E7%BA%A6%E5%AE%9D/signbao/html/register/shopinfo.html?"+e}),l.add_bounced(),l.close_tip()})})});

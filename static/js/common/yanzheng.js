@@ -1,0 +1,7 @@
+/**
+ * rechargeB - rechargeB详情
+ * @version v1.0.0
+ * @link 
+ * @license ISC
+ */
+define(function(){function r(r){var e;if(location.href.split("?").length<2)return!1;for(var t=location.href.split("?")[1].split("&"),a=t.length,s=0;s<a;s++){var n=t[s].split("=");if(n[0]==r)return e=n[1]}}function e(r,e,t){var a=$(r).val(),s=new RegExp("^[一-龥]{"+e+","+t+"}$");s.test(a)?$(r).removeClass("border_red"):$(r).addClass("border_red")}function t(r){var e=$(r).val(),t=/^1[0-9]{10}$/;t.test(e)?$(r).parents("dl").removeClass("error_data"):$(r).parents("dl").addClass("error_data")}function a(r,e,t){var a=$(r).val(),s=a.length;s<=e||s>t?$(r).addClass("border_red"):$(r).removeClass("border_red")}function s(r){var e=$(r).val(),t=/^[0-9]{6}$/;t.test(e)?$(r).parents("dl").removeClass("error_data"):$(r).parents("dl").addClass("error_data")}function n(r,e,t){var a=$(r).val()||$(r).text();a.length<e||a.length>t||!a.length?$(r).parents("dl").addClass("error_data"):$(r).parents("dl").removeClass("error_data")}function d(r){var e=$(r).find("img").attr("src"),t="../../static/img/wu@3x.png";e==t?$(r).addClass("error_data"):$(r).removeClass("error_data")}return{get_hash:r,china_test:e,tel_test:t,birth_test:a,code_test:s,name_test:n,pic_if:d}});

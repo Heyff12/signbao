@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>店铺门头照片</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <script type="text/javascript" src="../../static/js/plug/flexible.debug.js"></script>
+    <link rel="stylesheet" href="../../static/css/reg.css">
+</head>
+
+<body>
+    <div id="wap" class="js_regin_index">
+        <p class="remark grey">
+            <span class="orange">*</span>请上传真实的店铺照片，请保证画面清晰，完整拍摄到店铺门头名称及店内陈设情况
+        </p>
+        <section class="section_pic">
+            <dl class="js_shophead_pic" id="js_pic0">
+                <form name="regis_pic0" id="regis_pic0" enctype="multipart/form-data">
+                    <dt>店铺门头照片</dt>
+                    <dd class="opload_img" id="preview0"><img class="js_storage_img" data-mame="shopheader" src="../../static/img/wu@3x.png"></dd>
+                    <dd class="ipload">
+                        <input type="file" name="shopheader" size="32" accept="image/*" class="file file_style" id="js_shopheader" value="" />重新上传
+                    </dd>
+                    <input type="hidden" name="tag" value="shopheader" />
+                    <input type="hidden" name="category" value="1" />
+                    <input type="hidden" name="source" value="1" />
+                </form>
+            </dl>
+            <dl class="js_shopin_pic" id="js_pic1">
+                <form name="regis_pic1" id="regis_pic1" enctype="multipart/form-data">
+                    <dt>店内陈设照片</dt>
+                    <dd class="opload_img" id="preview1"><img class="js_storage_img" data-mame="shopin" src="../../static/img/wu@3x.png"></dd>
+                    <dd class="ipload">
+                        <input type="file" name="shopin" size="32" accept="image/*" class="file file_style" value="" id="js_shopin" />重新上传
+                    </dd>
+                    <input type="hidden" name="tag" value="shopin" />
+                    <input type="hidden" name="category" value="1" />
+                    <input type="hidden" name="source" value="1" />
+                </form>
+            </dl>
+        </section>
+        <section class="section_footer">
+            <span class="content_sub js_shoppic">完成</span>
+        </section>
+    </div>
+    <script src="../../src/js/require.2.1.11.min.js" type="text/javascript" data-main="../../src/js/register/shopinpic.js" defer async="true"></script>
+</body>
+
+</html>

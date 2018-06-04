@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>填写商户信息</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <script type="text/javascript" src="../../static/js/plug/flexible.debug.js"></script>
+    <link rel="stylesheet" href="../../static/css/reg.css">
+</head>
+
+<body>
+    <div id="wap" class="js_regin_index">
+        <p class="reg_title grey">商户基础信息</p>
+        <section class="section_reg">
+            <dl class="hang">
+                <dt>店主姓名<span class="right_arrow"><i class="i_normal">!</i></span></dt>
+                <dd>
+                    <input class="text js_storage js_ownername" type="text" value="" placeholder="请与收款卡号开户名一致" name="ownername" />
+                </dd>
+            </dl>
+            <dl class="hang">
+                <dt>身份证号<span class="right_arrow"><i class="i_normal">!</i></span></dt>
+                <dd>
+                    <input class="text js_storage js_idnumber" type="text" value="" placeholder="请输入" name="idnumber" />
+                </dd>
+            </dl>
+            <dl class="hang dt_long js_go_idcard">
+                <dt>身份证正反面图片<span class="right_arrow"><i class="i_normal">!</i></span></dt>
+                <dd>
+                    <span class="arrow"></span>
+                    <input class="text dd_select js_storage js_idcard" type="text" value="已上传" placeholder="请上传" readonly="readonly" name="idcard" />
+                </dd>
+            </dl>
+            <dl class="hang">
+                <dt>证件有效期<span class="right_arrow"><i class="i_normal">!</i></span></dt>
+                <dd>
+                    <input class="text text_shot2 js_storage js_idcard_startime" type="text" value="" placeholder="生效年月日" name="idcard_startime" readonly="readonly" data-year="" data-month="" data-day="" />
+                    <span class="black">至</span>
+                    <input class="text text_shot2 js_storage js_idcard_endtime" type="text" value="" placeholder="失效年月日" name="idcard_endtime" readonly="readonly" data-year="" data-month="" data-day="" />
+                </dd>
+            </dl>
+        </section>
+        <p class="reg_title grey">绑定银行卡信息</p>
+        <section class="section_reg">
+            <dl class="hang">
+                <dt>开户名<span class="right_arrow"><i class="i_normal">!</i></span></dt>
+                <dd>
+                    <input class="text js_storage js_bankuser" type="text" value="" placeholder="请与店主姓名一致" name="bankuser" />
+                </dd>
+            </dl>
+            <dl class="hang">
+                <dt>银行卡号<span class="right_arrow"><i class="i_normal">!</i></span></dt>
+                <dd>
+                    <input class="text js_storage js_bankaccount" type="text" value="" placeholder="请输入" name="bankaccount" />
+                </dd>
+            </dl>
+            <dl class="hang dt_long">
+                <dt>银行预留手机号<span class="right_arrow"><i class="i_normal">!</i></span></dt>
+                <dd>
+                    <input class="text js_storage js_bankmobile" type="text" value="" placeholder="请输入" name="bankmobile" />
+                </dd>
+            </dl>
+            <dl class="hang dt_long js_open_banktype"  data-small="small">
+                <dt>账户类型<span class="right_arrow"><i class="i_normal">!</i></span></dt>
+                <dd>
+                    <span class="arrow"></span>
+                    <input type="hidden" class="js_storage" name="banktype" id="js_banktype" value="">
+                    <input type="hidden" class="js_storage" name="banktype_val" id="js_banktype_val" value="">
+                    <span class="dd_select js_banktype" data-id="" data-value="">请选择</span>
+                    <!-- <input class="text dd_select js_storage js_banktype" type="text" value="" placeholder="请选择" readonly="readonly" name="banktype"  data-id="" data-value=""/> -->
+                </dd>
+            </dl>
+            <dl class="hang dt_long js_open_bankaddr">
+                <dt>开户地<span class="right_arrow"><i class="i_normal">!</i></span></dt>
+                <dd>
+                    <span class="arrow"></span>
+                    <input type="hidden" class="js_storage" name="bankprovince" id="js_bankprovince" value="">
+                    <input type="hidden" class="js_storage" name="bankcity" id="js_bankcity" value="">
+                    <input type="hidden" class="js_storage" name="bankprovince_val" id="js_bankprovince_val" value="">
+                    <input type="hidden" class="js_storage" name="bankcity_val" id="js_bankcity_val" value="">
+                    <span class="dd_select js_bank_addr" data-pro_id="" data-pro_val="" data-city_id="" data-city_val="">请选择</span>
+                    <!-- <input class="text dd_select js_storage js_bank_addr" type="text" value="" placeholder="请选择" readonly="readonly" name="bank_addr"  data-bankprovince="" data-bankcity="" /> -->
+                </dd>
+            </dl>
+            <dl class="hang dt_long js_go_bankname">
+                <dt>开户行<span class="right_arrow"><i class="i_normal">!</i></span></dt>
+                <dd>
+                    <span class="arrow"></span>
+                    <input class="text dd_select js_storage js_bankname" type="text" value="" placeholder="请选择" readonly="readonly" name="bankname" />
+                </dd>
+            </dl>
+        </section>
+        <p class="remark grey pad_bfoot">
+            <span class="orange">*</span>查询此银行卡的开户行请拨打：95588
+        </p>
+        <section class="section_footer">
+            <span class="content_sub js_third">下一步</span>
+        </section>
+    </div>
+    <div class="ios_select_container"></div>
+    <script src="../../static/js/require.2.1.11.min.js" type="text/javascript" data-main="../../static/js/register/businfo.js" defer async="true"></script>
+</body>
+
+</html>
